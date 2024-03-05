@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose Your Avatar:</title>
+    <link  rel="stylesheet" href="style.css" >
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h2>Choose Your Avatar: Main Character(Anime)</h2>
+
+            <div class="hi">
+           <img src="https://i.etsystatic.com/16478172/r/il/701f77/3639062635/il_570xN.3639062635_thrs.jpg" height="255px"width="390px" align="center" >
+            </div>
+
+
+        <div class="row">
+            <button id="Naruto">Naruto</button>
+            <button id="Saiki">Saiki</button>
+            <button id="Takemichi">Takemichi</button>
+            <button id="Akihito">Akihito</button>
+            <button id="Sakamoto">Sakamoto</button>
+            <button id="Emma">Emma </button>
+            <button id="Mashle">Mashle</button>
+
+
+        </div>
+
+            <button id="clear">Clear</button>
+
+
+    </div>
+<script>
+
+    const picture= document.querySelector('img');
+    const Naruto = document.getElementById('Naruto');
+    const Saiki = document.getElementById('Saiki');
+    const Takemichi = document.getElementById('Takemichi');
+    const Akihito = document.getElementById('Akihito');
+    const Sakamoto = document.getElementById('Sakamoto');
+    const Emma = document.getElementById('Emma');
+    const Mashle= document.getElementById('Mashle');
+
+    const clear=document.getElementById('clear')
+
+    Naruto.addEventListener('click', function(e){
+        removepic()
+        picture.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLnMpsqb6Ikq2a0R5A50W3cUIeF6cPsFC5r62vNRbCGg&s';
+
+    })
+    Saiki.addEventListener('click',function (e){
+         removepic()
+        picture.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZ2sf26QhRzgpsIrEFSdV2NftOjlje7EzHA&usqp=CAU";
+    })
+    Takemichi.addEventListener('click', function (e){
+        removepic()
+        picture.src="https://lostinanime.com/wp-content/uploads/2021/04/Tokyo-Revengers-03-02.jpg";
+    })
+    Akihito.addEventListener('click',function (e){
+        removepic()
+        picture.src="https://animetalksbyana.files.wordpress.com/2020/05/2ae3d38f64d9a7b5bfbdeb1e4d660fc4-1536x1025-1.jpg?w=1024";
+    })
+    Sakamoto.addEventListener('click', function (e){
+        removepic()
+        picture.src="https://i0.wp.com/blerdyotome.com/wp-content/uploads/2016/07/sakamoto.jpg?resize=600%2C337&ssl=1"
+    })
+    Emma.addEventListener('click',function (e){
+        removepic()
+        picture.src="https://miro.medium.com/v2/resize:fit:1400/1*QQWHHgSdipg-n1TsEWEUJg.jpeg"
+    })
+    Mashle.addEventListener('click', function (e){
+        removepic()
+        picture.src="https://a.storyblok.com/f/178900/1920x1080/0d69842797/mashle-episode-13.jpg/m/1200x0/filters:quality(95)format(webp)"
+    })
+
+    clear.addEventListener('click', function (e){
+        removepic()
+
+    })
+
+ function removepic(){
+     picture.src="https://i.etsystatic.com/16478172/r/il/701f77/3639062635/il_570xN.3639062635_thrs.jpg";
+ }
+</script>
+
+</div>
+</body>
+</html>
